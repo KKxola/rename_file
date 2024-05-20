@@ -1,41 +1,47 @@
-Organizando e Renomeando Arquivos de Imagem com Python
+### Organizando e Renomeando Arquivos de Imagem com Python
+
 Este projeto é um script Python para renomear e organizar arquivos de imagem em um diretório com base na data de criação das imagens. As imagens são movidas para subdiretórios estruturados por ano, mês e dia, o que facilita a navegação e a gestão dos arquivos.
 
-Funcionalidades
-Renomear Arquivos: Renomeia os arquivos de imagem com base na data de criação no formato YYYY-MM-DD_HH-MM-SS.
-Organização por Data: Move os arquivos renomeados para subdiretórios estruturados como YYYY/MM/DD.
-Paralelismo: Utiliza múltiplos threads para aumentar a eficiência do processo.
-Pré-requisitos
-Python 3.x
-Biblioteca Pillow (Python Imaging Library)
-Instalação
-Instale o Python: Certifique-se de ter o Python instalado. Você pode baixá-lo do site oficial do Python.
+### Funcionalidades
 
-Instale as Bibliotecas Necessárias: Execute o seguinte comando para instalar a biblioteca Pillow:
+- **Renomear Arquivos:** Renomeia os arquivos de imagem com base na data de criação no formato `YYYY-MM-DD_HH-MM-SS`.
+- **Organização por Data:** Move os arquivos renomeados para subdiretórios estruturados como `YYYY/MM/DD`.
+- **Paralelismo:** Utiliza múltiplos threads para aumentar a eficiência do processo.
 
-bash
-Copy code
-pip install pillow
-Uso
-Clone o Repositório:
+### Pré-requisitos
 
-bash
-Copy code
-git clone https://github.com/seu-usuario/organize-images.git
-cd organize-images
-Configure o Diretório:
+- Python 3.x
+- Biblioteca Pillow (Python Imaging Library)
 
-Edite o arquivo organize_images.py e altere o caminho do diretório em directories_to_process para o diretório que você deseja processar.
-Execute o Script:
+### Instalação
 
-Abra um terminal na pasta do projeto e execute:
-bash
+1. **Instale o Python:** Certifique-se de ter o Python instalado. Você pode baixá-lo do [site oficial do Python](https://www.python.org/downloads/).
 
-python organize_images.py
-Código Principal
-python
+2. **Instale as Bibliotecas Necessárias:** Execute o seguinte comando para instalar a biblioteca Pillow:
+   ```bash
+   pip install pillow
+   ```
 
+### Uso
 
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/organize-images.git
+   cd organize-images
+   ```
+
+2. **Configure o Diretório:**
+   - Edite o arquivo `organize_images.py` e altere o caminho do diretório em `directories_to_process` para o diretório que você deseja processar.
+
+3. **Execute o Script:**
+   - Abra um terminal na pasta do projeto e execute:
+     ```bash
+     python organize_images.py
+     ```
+
+### Código Principal
+
+```python
 import os
 from datetime import datetime
 from PIL import Image
@@ -104,19 +110,37 @@ if __name__ == '__main__':
         rename_and_organize_files_in_directory(directory)
 
     print("Renomeação e organização concluídas!")
-Contribuição
+```
+
+### Contribuição
+
 Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Licença
+### Licença
+
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Estrutura do Repositório
-Copy code
+---
+
+### Estrutura do Repositório
+
+```
 organize-images/
 │
 ├── LICENSE
 ├── README.md
 └── organize_images.py
-Observações
-Backup: Faça backup dos seus arquivos antes de executar o script para evitar perda de dados.
-Permissões: Certifique-se de ter permissões adequadas para ler e escrever no diretório especificado.
+```
+
+### Observações
+
+- **Backup:** Faça backup dos seus arquivos antes de executar o script para evitar perda de dados.
+- **Permissões:** Certifique-se de ter permissões adequadas para ler e escrever no diretório especificado.
+
+### Contato
+
+Para mais informações, entre em contato pelo [seu-email@example.com](mailto:seu-email@example.com).
+
+---
+
+Este é um exemplo de como você pode organizar e descrever o projeto no GitHub, fornecendo informações claras e detalhadas para facilitar o uso e a contribuição ao projeto.
