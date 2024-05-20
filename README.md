@@ -137,10 +137,3 @@ organize-images/
 - **Backup:** Faça backup dos seus arquivos antes de executar o script para evitar perda de dados.
 - **Permissões:** Certifique-se de ter permissões adequadas para ler e escrever no diretório especificado.
 
-### Contato
-
-Para mais informações, entre em contato pelo [seu-email@example.com](mailto:seu-email@example.com).
-
----
-
-Este é um exemplo de como você pode organizar e descrever o projeto no GitHub, fornecendo informações claras e detalhadas para facilitar o uso e a contribuição ao projeto.
