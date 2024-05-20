@@ -30,11 +30,12 @@ Execute o Script:
 
 Abra um terminal na pasta do projeto e execute:
 bash
-Copy code
+
 python organize_images.py
 Código Principal
 python
-Copy code
+
+
 import os
 from datetime import datetime
 from PIL import Image
